@@ -186,7 +186,7 @@ public class Board extends SurfaceView{
         blackPaint.setTextSize(50f);
 
         //create the Pass text on the pass button
-        canvas.drawText("PASS", 0, 4, 780, 820, blackPaint);
+        canvas.drawText("PASS", 0, 4, 800, 820, blackPaint);
 
         //draw the player names for the three opponents
         canvas.drawText("Player 2", 0, 8, 250, 530, blackPaint);
@@ -203,9 +203,9 @@ public class Board extends SurfaceView{
         //create the text object for the four buttons on the bottom left
         blackPaint.setTextSize(35f);
         //canvas.drawText("NEW GAME", 0, 8, 90, 820, blackPaint);
-        canvas.drawText("LOAD GAME", 0, 9, 90, 100, blackPaint);
-        canvas.drawText("SAVE GAME", 0, 9, 90, 220, blackPaint);
-        canvas.drawText("EXIT GAME", 0, 9, 1720, 100, blackPaint);
+        canvas.drawText("LOAD GAME", 0, 9, 90, 110, blackPaint);
+        canvas.drawText("SAVE GAME", 0, 9, 90, 230, blackPaint);
+        canvas.drawText("EXIT GAME", 0, 9, 1720, 110, blackPaint);
         canvas.drawText("PLAY HAND", 0, 9, 1070, 800, blackPaint);
 
 
