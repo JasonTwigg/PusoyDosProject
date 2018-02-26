@@ -40,7 +40,7 @@ public class Board extends SurfaceView{
     //Class level Bitmaps for the Buttons
 
     private Bitmap button1 = null;
-    private Bitmap button2 = null;
+    private Bitmap cardBack = null;
     private Bitmap button3 = null;
 
     /*
@@ -110,8 +110,8 @@ public class Board extends SurfaceView{
          */
         button1 = BitmapFactory.decodeResource(getResources(), R.drawable.button);
         button1 = Bitmap.createScaledBitmap(button1, 200, 100, false);
-        button2 = BitmapFactory.decodeResource(getResources(), R.drawable.card);
-        button2 = Bitmap.createScaledBitmap(button2, 270, 170, false);
+        cardBack = BitmapFactory.decodeResource(getResources(), R.drawable.card);
+        cardBack = Bitmap.createScaledBitmap(cardBack, 270, 170, false);
         button3 = BitmapFactory.decodeResource(getResources(), R.drawable.button);
         button3 = Bitmap.createScaledBitmap(button3, 230, 90, false);
 
@@ -166,27 +166,27 @@ public class Board extends SurfaceView{
         //draw the card in the middle of the play area
         canvas.drawBitmap(sixthCard,925,450,null);
 
-        // draws the pass button aswell as the button templates for the three players
+        //Draws the pass button
         canvas.drawBitmap(button3,750, 750, null);
-        canvas.drawBitmap(button2,200, 450, null);
-        canvas.drawBitmap(button2,1500, 450, null);
-        canvas.drawBitmap(button2,870, 60, null);
+        //Draws the "Play Hand" button
+        canvas.drawBitmap(button3, 1050, 750, null);
+
+        //Draws the Player 2,3,4 where it displays their amount of cards left.
+        canvas.drawBitmap(cardBack,200, 450, null);
+        canvas.drawBitmap(cardBack,1500, 450, null);
+        canvas.drawBitmap(cardBack,870, 60, null);
 
         //draw the four button templates for the buttons on the bottom left
         //canvas.drawBitmap(button3, 70, 760, null);
-        canvas.drawBitmap(button3, 70, 880, null);
-        canvas.drawBitmap(button3, 70, 1000, null);
-        canvas.drawBitmap(button3, 70, 1120, null);
-
-        canvas.drawBitmap(button3, 1050, 750, null); //play hand button
-
-
+        canvas.drawBitmap(button3, 70, 80, null);
+        canvas.drawBitmap(button3, 70, 200, null);
+        canvas.drawBitmap(button3, 1600, 80, null);
 
         //set textsize to 50 for the pass button
         blackPaint.setTextSize(50f);
 
         //create the Pass text on the pass button
-        canvas.drawText("PASS", 0, 4, 940, 820, blackPaint);
+        canvas.drawText("PASS", 0, 4, 840, 820, blackPaint);
 
         //draw the player names for the three opponents
         canvas.drawText("Player 2", 0, 8, 250, 530, blackPaint);
@@ -203,9 +203,9 @@ public class Board extends SurfaceView{
         //create the text object for the four buttons on the bottom left
         blackPaint.setTextSize(35f);
         //canvas.drawText("NEW GAME", 0, 8, 90, 820, blackPaint);
-        canvas.drawText("LOAD GAME", 0, 9, 90, 940, blackPaint);
-        canvas.drawText("SAVE GAME", 0, 9, 90, 1060, blackPaint);
-        canvas.drawText("EXIT GAME", 0, 9, 90, 1180, blackPaint);
+        canvas.drawText("LOAD GAME", 0, 9, 90, 100, blackPaint);
+        canvas.drawText("SAVE GAME", 0, 9, 90, 220, blackPaint);
+        canvas.drawText("EXIT GAME", 0, 9, 1600, 100, blackPaint);
         canvas.drawText("PLAY HAND", 0, 9, 1070, 800, blackPaint);
 
 
