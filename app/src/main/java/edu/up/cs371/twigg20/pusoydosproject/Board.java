@@ -164,7 +164,7 @@ public class Board extends SurfaceView{
         canvas.drawBitmap(thirdCard, 1100, 870, null);
 
         //draw the card in the middle of the play area
-        canvas.drawBitmap(sixthCard,925,450,null);
+        canvas.drawBitmap(sixthCard,925,435,null);
 
         //Draws the pass button
         canvas.drawBitmap(button3,750, 750, null);
@@ -186,7 +186,7 @@ public class Board extends SurfaceView{
         blackPaint.setTextSize(50f);
 
         //create the Pass text on the pass button
-        canvas.drawText("PASS", 0, 4, 800, 820, blackPaint);
+        canvas.drawText("PASS", 0, 4, 790, 820, blackPaint);
 
         //draw the player names for the three opponents
         canvas.drawText("Player 2", 0, 8, 250, 530, blackPaint);
