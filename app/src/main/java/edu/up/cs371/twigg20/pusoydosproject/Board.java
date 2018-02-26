@@ -107,11 +107,11 @@ public class Board extends SurfaceView{
          * creates "buttons" to represent the other players and how many cards
          * they have left
          */
-        button1 = BitmapFactory.decodeResource(getResources(), R.drawable.button);
+        button1 = BitmapFactory.decodeResource(getResources(), R.drawable.cardBack);
         button1 = Bitmap.createScaledBitmap(button1, 200, 100, false);
-        button2 = BitmapFactory.decodeResource(getResources(), R.drawable.button);
+        button2 = BitmapFactory.decodeResource(getResources(), R.drawable.cardBack);
         button2 = Bitmap.createScaledBitmap(button2, 270, 170, false);
-        button3 = BitmapFactory.decodeResource(getResources(), R.drawable.button);
+        button3 = BitmapFactory.decodeResource(getResources(), R.drawable.cardBack);
         button3 = Bitmap.createScaledBitmap(button3, 230, 90, false);
 
         //draws "Pusoy Dos" title onto upper center of board
