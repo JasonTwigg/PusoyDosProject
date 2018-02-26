@@ -29,6 +29,7 @@ public class Board extends SurfaceView{
     private Bitmap fourthCard = null;
     private Bitmap fifthCard = null;
     private Bitmap sixthCard = null;
+    //
 
 
     //Class level Bitmap for the text “Pusoy Dos”
