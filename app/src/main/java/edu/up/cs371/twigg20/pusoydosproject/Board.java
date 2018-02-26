@@ -141,11 +141,13 @@ public class Board extends SurfaceView{
         Paint redPaint = new Paint();
         Paint grayPaint = new Paint();
         Paint blackPaint = new Paint();
+        Paint whitePaint = new Paint();
 
         //sets paint colors
         greenPaint.setColor(Color.rgb(0,100,0));
         redPaint.setColor(Color.RED); grayPaint.setColor(Color.GRAY);
         blackPaint.setColor(Color.BLACK);
+        whitePaint.setColor(Color.rgb(255,255,255));
 
 
 
@@ -163,6 +165,7 @@ public class Board extends SurfaceView{
         canvas.drawBitmap(secondCard, 1000, 900, null);
         canvas.drawBitmap(thirdCard, 1100, 870, null);
 
+
         //draw the card in the middle of the play area
         canvas.drawBitmap(sixthCard,925,420,null);
 
@@ -175,6 +178,10 @@ public class Board extends SurfaceView{
         canvas.drawBitmap(cardBack,200, 450, null);
         canvas.drawBitmap(cardBack,1500, 450, null);
         canvas.drawBitmap(cardBack,870, 60, null);
+
+        canvas.drawRect(250, 470, 430, 600, whitePaint);
+        canvas.drawRect(1550, 470, 1730, 600, whitePaint);
+        canvas.drawRect(920, 80, 1100, 210, whitePaint);
 
         //draw the four button templates for the buttons on the bottom left
         //canvas.drawBitmap(button3, 70, 760, null);
