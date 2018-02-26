@@ -157,11 +157,11 @@ public class Board extends SurfaceView{
         canvas.drawBitmap(title,650,290,null);
 
         //draw the five cards that represent the example hand
-        canvas.drawBitmap(fifthCard, 500, 900, null);
-        canvas.drawBitmap(firstCard, 700, 900, null);
+        canvas.drawBitmap(fifthCard, 700, 900, null);
+        canvas.drawBitmap(firstCard, 800, 900, null);
         canvas.drawBitmap(fourthCard, 900, 900, null);
-        canvas.drawBitmap(secondCard, 1100, 900, null);
-        canvas.drawBitmap(thirdCard, 1300, 870, null);
+        canvas.drawBitmap(secondCard, 1000, 900, null);
+        canvas.drawBitmap(thirdCard, 1100, 870, null);
 
         //draw the card in the middle of the play area
         canvas.drawBitmap(sixthCard,925,450,null);
