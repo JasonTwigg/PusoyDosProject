@@ -108,11 +108,11 @@ public class Board extends SurfaceView{
          * creates "buttons" to represent the other players and how many cards
          * they have left
          */
-        button1 = BitmapFactory.decodeResource(getResources(), R.drawable.card);
+        button1 = BitmapFactory.decodeResource(getResources(), R.drawable.button);
         button1 = Bitmap.createScaledBitmap(button1, 200, 100, false);
         button2 = BitmapFactory.decodeResource(getResources(), R.drawable.card);
         button2 = Bitmap.createScaledBitmap(button2, 270, 170, false);
-        button3 = BitmapFactory.decodeResource(getResources(), R.drawable.card);
+        button3 = BitmapFactory.decodeResource(getResources(), R.drawable.button);
         button3 = Bitmap.createScaledBitmap(button3, 230, 90, false);
 
         //draws "Pusoy Dos" title onto upper center of board
@@ -167,18 +167,18 @@ public class Board extends SurfaceView{
         canvas.drawBitmap(sixthCard,925,450,null);
 
         // draws the pass button aswell as the button templates for the three players
-        canvas.drawBitmap(button1,900, 750, null);
+        canvas.drawBitmap(button3,750, 750, null);
         canvas.drawBitmap(button2,200, 450, null);
         canvas.drawBitmap(button2,1500, 450, null);
         canvas.drawBitmap(button2,870, 60, null);
 
         //draw the four button templates for the buttons on the bottom left
-        canvas.drawBitmap(button3, 70, 760, null);
+        //canvas.drawBitmap(button3, 70, 760, null);
         canvas.drawBitmap(button3, 70, 880, null);
         canvas.drawBitmap(button3, 70, 1000, null);
         canvas.drawBitmap(button3, 70, 1120, null);
 
-        canvas.drawBitmap(button3, 1550, 1000, null);
+        canvas.drawBitmap(button3, 1050, 750, null); //play hand button
 
 
 
@@ -202,11 +202,11 @@ public class Board extends SurfaceView{
 
         //create the text object for the four buttons on the bottom left
         blackPaint.setTextSize(35f);
-        canvas.drawText("NEW GAME", 0, 8, 90, 820, blackPaint);
+        //canvas.drawText("NEW GAME", 0, 8, 90, 820, blackPaint);
         canvas.drawText("LOAD GAME", 0, 9, 90, 940, blackPaint);
         canvas.drawText("SAVE GAME", 0, 9, 90, 1060, blackPaint);
         canvas.drawText("EXIT GAME", 0, 9, 90, 1180, blackPaint);
-        canvas.drawText("PLAY HAND", 0, 9, 1575, 1055, blackPaint);
+        canvas.drawText("PLAY HAND", 0, 9, 1070, 800, blackPaint);
 
 
 
